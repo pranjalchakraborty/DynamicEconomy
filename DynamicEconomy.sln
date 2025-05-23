@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicEconomy", "DynamicEconomy.csproj", "{35E0AC48-2C8C-28B7-B5CD-9C485272EC0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Il2Cpp|Any CPU = Il2Cpp|Any CPU
+		Mono|Any CPU = Mono|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35E0AC48-2C8C-28B7-B5CD-9C485272EC0F}.Il2Cpp|Any CPU.ActiveCfg = Il2Cpp|Any CPU
+		{35E0AC48-2C8C-28B7-B5CD-9C485272EC0F}.Il2Cpp|Any CPU.Build.0 = Il2Cpp|Any CPU
+		{35E0AC48-2C8C-28B7-B5CD-9C485272EC0F}.Mono|Any CPU.ActiveCfg = Mono|Any CPU
+		{35E0AC48-2C8C-28B7-B5CD-9C485272EC0F}.Mono|Any CPU.Build.0 = Mono|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D10E191-2178-43AB-AA7B-9CA1AB2F211C}
+	EndGlobalSection
+EndGlobal

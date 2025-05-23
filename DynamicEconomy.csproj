@@ -1,0 +1,214 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<RootNamespace>DynamicEconomy</RootNamespace>
+		<LangVersion>10.0</LangVersion>
+		<IsPackable>false</IsPackable>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<Configurations>Mono;Il2Cpp</Configurations>
+		<AssemblyName>DynamicEconomy</AssemblyName>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)' == 'Il2Cpp'">
+		<DefineConstants>Il2Cpp</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)' == 'Mono'">
+		<DefineConstants>Mono</DefineConstants>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="*.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="S1API" Version="1.6.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="0Harmony">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\0Harmony.dll</HintPath>
+	  </Reference>
+	  <Reference Include="AsmResolver">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\AsmResolver.dll</HintPath>
+	  </Reference>
+	  <Reference Include="AsmResolver.DotNet">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\AsmResolver.DotNet.dll</HintPath>
+	  </Reference>
+	  <Reference Include="AsmResolver.PE">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\AsmResolver.PE.dll</HintPath>
+	  </Reference>
+	  <Reference Include="AsmResolver.PE.File">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\AsmResolver.PE.File.dll</HintPath>
+	  </Reference>
+	  
+	  <Reference Include="AssetRipper.VersionUtilities">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\AssetRipper.VersionUtilities.dll</HintPath>
+	  </Reference>
+	  <Reference Include="AssetsTools.NET">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\AssetsTools.NET.dll</HintPath>
+	  </Reference>
+	  <Reference Include="bHapticsLib">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\bHapticsLib.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Iced">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Iced.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Il2CppInterop.Common">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Il2CppInterop.Common.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Il2CppInterop.Generator">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Il2CppInterop.Generator.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Il2CppInterop.HarmonySupport">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Il2CppInterop.HarmonySupport.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Il2CppInterop.Runtime">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Il2CppInterop.Runtime.dll</HintPath>
+	  </Reference>
+	  <Reference Include="IndexRange">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\IndexRange.dll</HintPath>
+	  </Reference>
+	  <Reference Include="MelonLoader">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\MelonLoader.dll</HintPath>
+	  </Reference>
+	  <Reference Include="MelonLoader.NativeHost">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\MelonLoader.NativeHost.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Diagnostics.NETCore.Client">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Microsoft.Diagnostics.NETCore.Client.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Diagnostics.Runtime">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Microsoft.Diagnostics.Runtime.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Extensions.Configuration">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Microsoft.Extensions.Configuration.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Extensions.Configuration.Binder">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Extensions.Logging">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Microsoft.Extensions.Logging.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Extensions.Options">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Microsoft.Extensions.Options.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Extensions.Primitives">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Microsoft.Extensions.Primitives.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Win32.SystemEvents">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Microsoft.Win32.SystemEvents.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Mono.Cecil">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Mono.Cecil.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Mono.Cecil.Mdb">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Mono.Cecil.Mdb.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Mono.Cecil.Pdb">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Mono.Cecil.Pdb.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Mono.Cecil.Rocks">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Mono.Cecil.Rocks.dll</HintPath>
+	  </Reference>
+	  <Reference Include="MonoMod">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\MonoMod.dll</HintPath>
+	  </Reference>
+	  <Reference Include="MonoMod.Backports">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\MonoMod.Backports.dll</HintPath>
+	  </Reference>
+	  <Reference Include="MonoMod.ILHelpers">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\MonoMod.ILHelpers.dll</HintPath>
+	  </Reference>
+	  <Reference Include="MonoMod.RuntimeDetour">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\MonoMod.RuntimeDetour.dll</HintPath>
+	  </Reference>
+	  <Reference Include="MonoMod.Utils">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\MonoMod.Utils.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Newtonsoft.Json">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Newtonsoft.Json.dll</HintPath>
+	  </Reference>
+	  <Reference Include="System.Configuration.ConfigurationManager">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\System.Configuration.ConfigurationManager.dll</HintPath>
+	  </Reference>
+	  <Reference Include="System.Drawing.Common">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\System.Drawing.Common.dll</HintPath>
+	  </Reference>
+	  <Reference Include="System.Security.Cryptography.ProtectedData">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\System.Security.Cryptography.ProtectedData.dll</HintPath>
+	  </Reference>
+	  <Reference Include="System.Security.Permissions">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\System.Security.Permissions.dll</HintPath>
+	  </Reference>
+	  <Reference Include="System.Windows.Extensions">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\System.Windows.Extensions.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Tomlet">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\Tomlet.dll</HintPath>
+	  </Reference>
+	  
+	  
+	  <Reference Include="UnityEngine.Il2CppAssetBundleManager">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\UnityEngine.Il2CppAssetBundleManager.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.Il2CppImageConversionManager">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\UnityEngine.Il2CppImageConversionManager.dll</HintPath>
+	  </Reference>
+	  <Reference Include="WebSocketDotNet">
+	    <HintPath>..\..\Mine\Assemblies\MelonLoader\WebSocketDotNet.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(Configuration)' == 'Mono'">
+<Reference Include="Assembly-CSharp">
+	    <HintPath>..\..\Mine\Assemblies\Mono\Assembly-CSharp.dll</HintPath>
+	  </Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>..\..\Mine\Assemblies\Mono\UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>..\..\Mine\Assemblies\Mono\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(Configuration)' == 'Il2Cpp'">
+		<Reference Include="Assembly-CSharp">
+			<HintPath>..\..\Mine\Assemblies\Il2Cpp\Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>..\..\Mine\Assemblies\Il2Cpp\UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>..\..\Mine\Assemblies\Il2Cpp\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	
+	
+	<Target Name="CopyOutputFileToGame" AfterTargets="Build">
+		<Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="..\..\..\Schedule I\Mods" Retries="60" />
+	</Target>
+	<Target Name="CopyOutputFileToGameF5" AfterTargets="Build">
+		<Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="..\..\..\Schedule I\Mods" Retries="60" />
+	</Target>
+</Project>
